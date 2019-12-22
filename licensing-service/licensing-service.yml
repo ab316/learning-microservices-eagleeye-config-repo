@@ -12,3 +12,6 @@ spring:
     url: jdbc:postgresql://localhost:5432/eagleeye_local
     username: postgres
     password: p0stgr@s
+
+test:
+    mynewconfig: "hello"
