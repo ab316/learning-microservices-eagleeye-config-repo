@@ -5,4 +5,14 @@ zuul:
     organization-service: /organization/**
     licensing-service: /licensing/**
 
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 11000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
+
+ribbon:
+  connectTimeout: 1000
+  readTimeout: 3000
