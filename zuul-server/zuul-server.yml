@@ -4,3 +4,11 @@ zuul:
   routes:
     organization-service: /organization/**
     licensing-service: /licensing/**
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
