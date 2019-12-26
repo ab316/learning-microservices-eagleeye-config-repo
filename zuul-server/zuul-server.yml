@@ -4,6 +4,7 @@ zuul:
   routes:
     organization-service: /organization/**
     licensing-service: /licensing/**
+  sensitiveHeaders: Cookie, Set-Cookie
 
 hystrix:
   command:
